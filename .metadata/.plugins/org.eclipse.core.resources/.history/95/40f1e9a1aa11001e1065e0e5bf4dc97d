@@ -1,0 +1,5 @@
+@charset "UTF-8";
+.menu table{
+	margin: auto auto auto auto;
+	text-align: center;
+}

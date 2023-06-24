@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.information {
+	border-top: 2px solid gray;
+	background-color: #ccd5ae;
+	padding-bottom: 20px;
+}
+.information img{
+	width: 300px;
+	background-color: #ccd5ae;
+}
+.information table {
+	margin: 30px auto 30px auto;
+	border-collapse: collapse;
+
+}
+.information tr, .information td, .information th {
+	background-color: #ccd5ae;
+	padding: 10px 10px 10px 10px;
+}
+.information td {
+	padding: 10px 50px 10px 30px;
+}
+.information th {
+	text-align: left;
+	font-size: 20px;
+}

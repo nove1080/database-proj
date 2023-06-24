@@ -1,0 +1,19 @@
+@charset "UTF-8";
+.paging {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paging a {
+  color: #008CBA;
+  text-decoration: none;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.paging .active {
+  background-color: #666;
+  color: #fff;
+}

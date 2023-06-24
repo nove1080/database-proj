@@ -1,0 +1,103 @@
+package dao;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.ServletContext;
+import common.JDBConnect;
+import dto.ReviewDTO;
+
+public class ReviewDAO extends JDBConnect{
+	public ReviewDAO(ServletContext application) {
+		super(application);
+	}
+	
+	// 리뷰 목록 조회(검색)
+	public List<ReviewDTO> getReviewList(Map<String, Object> map) {
+		List<ReviewDTO> list = new LinkedList<ReviewDTO>();
+		
+		String query = " SELECT F.fname, R.fid, R.mid, R.title, R.content, R.postdate, R.num "
+				+ " FROM FIELD F INNER JOIN REVIEW R ON F.FID = R.FID ";
+		if(map.get("searchWord") != null) {
+			query += " WHERE " + map.get("searchWord") + " LIKE '%" + map.get("searchField") +"%' ";
+		}
+		query += " ORDER BY num DESC ";
+		
+		try {
+			stmt = con.createStatement();
+			rs = stmt.executeQuery(query);
+			
+			while(rs.next()) {
+				ReviewDTO review = new ReviewDTO();
+				review.setFid(rs.getString("fid"));
+				review.setMid(rs.getString("mid"));
+				review.setContent(rs.getString("content"));
+				review.setPostdate(rs.getDate("postdate"));
+				review.setTitle(rs.getString("title"));
+				review.setNum(rs.getString("num"));
+				review.setFname(rs.getString("fname"));
+				
+				list.add(review);
+			}
+		} catch (Exception e) {
+			System.out.println("리뷰 리스트 조회 중 예외 발생");
+			e.printStackTrace();
+		}
+		
+		return list;
+	}
+	
+	// 단일 리뷰 조회
+	public ReviewDTO getReview(Map<String, Object> map) {
+		ReviewDTO review = new ReviewDTO();
+		
+		String query = " SELECT F.fname, R.fid, R.mid, R.title, R.content, R.postdate, R.num "
+				+ " FROM FIELD F INNER JOIN REVIEW R ON F.FID = R.FID ";
+		if(map.get("searchWord") != null) {
+			query += " WHERE " + map.get("searchWord") + " = " + map.get("searchField") +" ";
+		}
+		
+		try {
+			stmt = con.createStatement();
+			rs = stmt.executeQuery(query);
+			
+			if(rs.next()) {
+				review.setFid(rs.getString("fid"));
+				review.setMid(rs.getString("mid"));
+				review.setContent(rs.getString("content"));
+				review.setPostdate(rs.getDate("postdate"));
+				review.setTitle(rs.getString("title"));
+				review.setNum(rs.getString("num"));
+				review.setFname(rs.getString("fname"));
+			}
+		} catch(Exception e) {
+			System.out.println("단일 리뷰 조회 중 예외 발생");
+			e.printStackTrace();
+		}
+		
+		return review;
+	}
+	
+	// 리뷰 등록
+	public int insertReview(ReviewDTO review) {
+		int inserted = 0;
+		
+		String query = " INSERT INTO review "
+				     + " (fid, mid, title, content) "
+				     + " VALUES (?, ?, ?, ?) ";
+		try {
+			pstmt = con.prepareStatement(query);
+			pstmt.setString(1, review.getFid());
+			pstmt.setString(2, review.getMid());
+			pstmt.setString(3, review.getTitle());
+			pstmt.setString(4, review.getContent());
+			
+			inserted = pstmt.executeUpdate();
+		} catch(Exception e) {
+			System.out.println("리뷰 추가 중 예외 발생");
+			e.printStackTrace();
+		}
+		return inserted;
+	}
+}

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+.menu table{
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+.menu tr{
+	padding-top: 100px;
+}
+
+.menu a {
+	text-decoration: none;
+	color: black;
+}	
+.menu a:link {
+	color: black;	
+}
+.menu a:hover {
+	color: green;	
+}

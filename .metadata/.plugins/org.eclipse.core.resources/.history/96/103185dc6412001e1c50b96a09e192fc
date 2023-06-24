@@ -1,0 +1,48 @@
+<%@page import="java.util.HashMap"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="dao.ReviewDAO" %>
+<%@ page import="dto.ReviewDTO" %>
+<%@ page import="java.util.Map" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/style.css"/>
+<link rel="stylesheet" href="../css/title.css"/>
+<link rel="stylesheet" href="../css/support.css"/>
+<link rel="stylesheet" href="../css/topbar.css"/>
+<title>풋살장 예약 시스템 - 리뷰 게시글</title>
+</head>
+<%
+String num = request.getParameter("num");
+
+ReviewDAO dao = new ReviewDAO(application);
+Map<String, Object> map = new HashMap<String, Object>();
+map.put("searchWord", "num");
+map.put("searchField", num);
+
+ReviewDTO review = dao.getReview(map);
+dao.close();
+%>
+<body>
+	<header>
+		<jsp:include page="../inc/title.jsp"/>
+		<jsp:include page="../menubar/topbar.jsp"/>
+	</header>
+	<div id="wrap">
+		<table>
+		<tr>
+			<td rowspan="3">제목: ${ review.getTitle() }</td>
+		</tr>
+		<tr>
+			<td>풋살장: ${ review.getFname() }</td>
+			<td>작성자: ${ review.getMid() }</td>
+			<td>작성일: ${ review.getPostdate() }</td>
+		</tr>
+		</table>
+	</div>
+	<footer class="footer">	
+		<jsp:include page="../inc/support.jsp"/>
+	</footer>
+</body>
+</html>

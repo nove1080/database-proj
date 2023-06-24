@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.list {
+  border-collapse: collapse;
+  border: 2px solid gray;
+}
+.list table tr, .list table td, .list table th {
+	text-align: center;
+	border: 2px solid gray;
+}
+.list table tr {
+	padding: 5px 10px 5px 10px;
+}

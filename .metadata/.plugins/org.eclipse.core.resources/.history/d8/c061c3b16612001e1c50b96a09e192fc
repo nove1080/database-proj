@@ -1,0 +1,26 @@
+@charset "UTF-8";
+#wrap {
+  justify-content: center;
+  align-items: center;
+}
+
+#wrap table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  border: 2px solid gray;
+}
+
+#wrap th,
+#wrap td {
+  text-align: center;
+  border: 2px solid gray;
+  padding: 5px 10px;
+}
+
+#wrap th {
+  background-color: lightgray;
+}
+
+/* #wrap tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;MustHaveJSP&apos;" deleteContents="true" description="Delete resource &apos;MustHaveJSP&apos;" element1="/MustHaveJSP" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1682689603726"/>&#x0A;<refactoring comment="Delete resource &apos;MustHaveJSP_origin&apos;" deleteContents="true" description="Delete resource &apos;MustHaveJSP_origin&apos;" element1="/MustHaveJSP_origin" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1682689608864"/>
+</session>

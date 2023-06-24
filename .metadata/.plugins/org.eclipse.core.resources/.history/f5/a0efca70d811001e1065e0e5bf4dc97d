@@ -1,0 +1,6 @@
+@charset "UTF-8";
+.wrap table {
+  border-collapse: collapse;
+  border: 2px solid gray;
+  padding: 10px;
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;test.jsp&apos; to &apos;99Test&apos;" description="Move &apos;test.jsp&apos; to &apos;99Test&apos;" destination="src/main/webapp/99Test" element1="src/main/webapp/04Cookie/test.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1680012703840" updateReferences="true"/>
+</session>

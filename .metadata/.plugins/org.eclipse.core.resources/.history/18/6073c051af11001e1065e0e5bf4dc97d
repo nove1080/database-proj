@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/title.css" />
+<link rel="stylesheet" href="../css/support.css" />
+<link rel="stylesheet" href="../css/topbar.css" />
+<title>관리자 페이지 - 풋살장 등록</title>
+</head>
+<body>
+	<header>
+		<jsp:include page="../inc/title.jsp" />
+	</header>
+	<div id="wrap">
+		<h2>풋살장 추가하기</h2>
+		<form action="../process/fieldRegisterProcess.jsp" method="get">
+			<div class="form-container">
+				<table>
+					<tr>
+						<th>아이디</th>
+						<td><input id="id" type="text" name="userMid" placeholder="ID" /></td>
+					</tr>
+					<tr>
+						<th>비밀번호</th>
+						<td><input id="pw" type="password" name="userPasswd" placeholder="PW" /></td>
+					</tr>
+				</table>
+				<button type="submit" id="login">로그인</button>
+				<button type="button" onclick="location.href='joinForm.jsp'" id="join">회원가입</button>
+			</div>
+		</form>
+	</div>
+	<footer class="footer">
+		<jsp:include page="../inc/support.jsp" />
+	</footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="dto.ReviewDTO"%>
+<%@ page import="dao.ReviewDAO"%>
+<%
+String mid = request.getParameter("mid");
+String fid = request.getParameter("fid");
+String title = request.getParameter("title");
+String content = request.getParameter("content");
+
+ReviewDTO dto = new ReviewDTO();
+dto.setFid(fid);
+dto.setMid(mid);
+dto.setTitle(title);
+dto.setContent(content);
+
+ReviewDAO dao = new ReviewDAO();
+dao.insertReview(dto);
+
+dao.close();
+%>

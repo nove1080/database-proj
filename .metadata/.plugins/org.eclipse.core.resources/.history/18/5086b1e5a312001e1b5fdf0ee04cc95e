@@ -1,0 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<div class="title">
+	<img src="../image/logo.png" alt="logo" width="100px">
+	<a href="../page/index.jsp">
+		전남대학교 풋살장 예약 시스템
+	</a>
+</div>

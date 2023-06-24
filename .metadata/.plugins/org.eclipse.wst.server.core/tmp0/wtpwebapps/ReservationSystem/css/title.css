@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import url(./style.css);
+.title{
+	border-bottom: 2px solid gray;
+	background-color: #ccd5ae;	
+}
+.title img, h1{
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #ccd5ae;
+}
+.title a {
+	color: black;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #ccd5ae;
+}
+.title img{
+	width: 100px;
+	margin: 10px 30px 10px 30px;
+}

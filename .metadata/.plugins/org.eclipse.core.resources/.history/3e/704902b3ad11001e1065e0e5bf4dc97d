@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.menu table{
+/* 	margin: 0 auto 0 auto;
+	text-align: center;
+	border: 1px solid gray; */
+	border-collapse: collapse;
+	border: 2px solid gray;
+   	margin: auto auto auto auto;
+}
+.menu td{
+	border: 1px solid gray;
+	padding: 20px 20px 20px 20px;
+	text-align: center;
+}
+
+.menu a {
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}	
+.menu a:link {
+	color: black;	
+}
+.menu a:hover {
+	color: green;	
+}

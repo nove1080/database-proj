@@ -1,0 +1,9 @@
+@charset "UTF-8";
+#wrap table {
+  border-collapse: collapse;
+  border: 2px solid gray;
+}
+#wrap table tr, #wrap table td, #wrap table th {
+	  border-collapse: collapse;
+	border: 2px solid gray;
+}

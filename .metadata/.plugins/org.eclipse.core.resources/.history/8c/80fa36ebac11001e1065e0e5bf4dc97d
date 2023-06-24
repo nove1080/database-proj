@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.menu table{
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+.menu table tr td a{
+	padding: 50 0 50 0;
+	text-decoration: none;
+}

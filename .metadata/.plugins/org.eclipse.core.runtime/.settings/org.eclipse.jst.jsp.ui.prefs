@@ -1,0 +1,12 @@
+SCRIPT_AREA_BORDER=\#eac700 | null | false | false | false | false
+commentBorder=\#6d6d6d | null | false | false | false | false
+commentText=\#6d6d6d | null | false | false | false | false
+eclipse.preferences.version=1
+jsp_content=\#D8D8D8 | null | null | null | null | null
+newFileTemplateName=New JSP File (html 5)
+overriddenByCSS=,jsp_content,tagName,
+tagAttributeEquals=\#80ff80 | null | false | false | false | false
+tagAttributeName=\#89db00 | null | false | false | false | false
+tagAttributeValue=\#2fb060 | null | false | false | false | false
+tagBorder=\#6d6d6d | null | false | false | false | false
+tagName=\#03a8d8 | null | true | false | false | false

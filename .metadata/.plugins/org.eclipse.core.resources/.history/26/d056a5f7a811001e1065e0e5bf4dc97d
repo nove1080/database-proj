@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/style.css"/>
+<link rel="stylesheet" href="../css/title.css"/>
+<link rel="stylesheet" href="../css/support.css"/>
+<link rel="stylesheet" href="../css/topbar.css"/>
+<link rel="stylesheet" href="../css/admin.css"/>
+<title>풋살장 예약 시스템 - 관리자 페이지</title>
+</head>
+<body>
+	<header>
+		<jsp:include page="../inc/title.jsp"/>
+	</header>
+	<div id="wrap">
+		<h2>관리자 페이지</h2>
+		<div class="menu">
+			<ul>
+				<li><a href="fieldRegisterForm.jsp">경기장 추가</a></li>
+				<li><a href="reservationDelete.jsp">예약 삭제</a></li>
+				<li><a href="reviewDelete.jsp">리뷰 삭제</a></li>
+			</ul>
+		</div>
+	</div>
+	<footer class="footer">	
+		<jsp:include page="../inc/support.jsp"/>
+	</footer>
+</body>
+</html>

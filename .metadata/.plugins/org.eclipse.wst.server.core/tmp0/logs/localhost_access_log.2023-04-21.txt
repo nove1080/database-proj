@@ -1,0 +1,4 @@
+127.0.0.1 - - [21/Apr/2023:20:23:51 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [21/Apr/2023:20:23:54 +0900] "GET /MustHaveJSP/99Test/06Session/SessionMain.jsp HTTP/1.1" 200 367
+0:0:0:0:0:0:0:1 - - [21/Apr/2023:20:23:54 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [21/Apr/2023:20:27:11 +0900] "GET /MustHaveJSP/99Test/06Session/SessionMain.jsp HTTP/1.1" 200 367

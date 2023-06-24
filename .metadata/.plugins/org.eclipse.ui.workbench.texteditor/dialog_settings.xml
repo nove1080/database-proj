@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="tempPageNum"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="virtual"/>
+			<item value="tempPageNum"/>
+			<item value="red"/>
+			<item value="test"/>
+			<item value="select"/>
+			<item value="innerBar"/>
+			<item value="fid"/>
+			<item value="review"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+</section>
